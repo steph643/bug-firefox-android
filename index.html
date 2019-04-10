@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html style="height:100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug</title>
+  </head>
+  <body style="display:flex; flex-direction: column; height:100%; margin:0">
+    <div style="flex: 0 0 30px; background-color: yellow; padding:15px">
+      Header
+      <button style="float:right" onclick="onButtonClick()">Show/Hide</button>
+    </div>
+    <div id="panel" style="flex: 1 0 0; background-color: green;overflow:auto">
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+      <p>Line</p>
+    </div>
+    <script>
+      const button = document.getElementById('panel')
+      const saveDisplay = button.style.display
+      let show = true
+      function onButtonClick() {
+        show = !show
+        button.style.display = show ? saveDisplay : 'none'
+      }
+    </script>
+  </body>
+</html>
