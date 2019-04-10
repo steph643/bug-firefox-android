@@ -10,42 +10,48 @@
       Header
       <button style="float:right" onclick="onButtonClick()">Show/Hide</button>
     </div>
-    <div id="panel" style="flex: 1 0 0; background-color: green;overflow:auto">
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
-      <p>Line</p>
+    <div style="flex: 1 0 0; display:flex; flex-direction: row; overflow:hidden">
+      <div style="flex: 1 0 0; background-color: blue">
+        Left
+      </div>
+      <div id="panel" style="flex: 1 0 0; background-color: green;overflow:auto">
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+        <p>Line</p>
+      </div>
     </div>
+
     <script>
       const button = document.getElementById('panel')
       const saveDisplay = button.style.display
